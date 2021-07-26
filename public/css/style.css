@@ -1,0 +1,232 @@
+body,html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../webfonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../webfonts/MaterialIcons-Regular.woff) format('woff'),
+    url(../webfonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* blue color rgb 24, 200, 240
+            hex 18c8f0
+            hsv    191, 90, 94
+
+
+    darkblue rgb 2, 93, 133
+            hex 025d85
+            hsv 198, 98, 52
+            */
+
+.navbar, footer {
+  min-height: 5rem;
+  background-color: #18c8f0;
+}
+
+#navbar .nav-link {
+    border-right: 3px solid #f7f2ec;
+    padding: 0 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#navbar .nav-item:last-child .nav-link{
+    border-right: none;
+}
+
+#navbar .nav-link.active {
+    color:#f7f2ec;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  line-height: 5rem;
+}
+
+#logo {
+    margin-bottom: 10px;
+    width: 287px;
+    height: 48px;
+}
+
+main {
+    background-color: white;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+footer p {
+    color: #025d85;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#loginform {
+    margin-top:3rem;
+}
+
+#loginform label {
+    margin:0px;
+}
+
+#loginform .form-group {
+    margin-bottom: 0.2rem;
+}
+
+.card.login {
+    width: 12rem;
+    background-color: #18c8f0;
+    color: #f7f2ec;
+}
+
+.btn.login {
+    background-color: #18c8f0;
+    color: #f7f2ec;
+}
+
+.custom-control input {
+    color: #18c8f0;
+}
+
+.card.home {
+    width: 15rem;
+    background-color: green;
+    color: #f7f2ec;
+    margin-top:5rem;
+}
+
+.card.home img {
+    outline: 1px dashed green;
+    outline-offset: -5px;
+}
+
+.card.home.occupied {
+    background-color: red;
+}
+
+.card.home.occupied img {
+    outline: 1px dashed red;
+}
+
+.heading {
+    border-bottom:1px solid;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.heading h4 {
+    display:inline-block;
+}
+
+.heading a.btn,
+.heading button {
+
+
+}
+
+.btn-primary {
+    color: #f7f2ec;
+    background-color: #025D85;
+}
+
+
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 6px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    /* border-radius: 100%; */
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-upload .avatar-edit label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit label:after {
+    content: "cloud_upload";
+    font-family: 'Material Icons';
+    font-size: 1rem;
+    color: #025D85;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    /* border-radius: 100%; */
+    /* border: 6px solid #F8F8F8; */
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-success > td > a {
+    color: #fff;
+}
+
+.alert > ul {
+    margin-top: 1rem;
+}
